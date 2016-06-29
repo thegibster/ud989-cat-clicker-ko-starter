@@ -9,7 +9,7 @@ var intialCats= [
   {
     clickCount : 0,
     name :'Meosers',
-    imgSrc :'img/434164568_fea0ad4013_z.jpg',
+    imgSrc :'img/22252709_010df3379e_z.jpg',
     imgAttribution : 'https://www.flickr.com/phtos/big',
     nickNames :[{name: 'bob'},{name :'Precious'},{name:'Curtts'}]
   }
@@ -54,6 +54,9 @@ var ViewModel = function (){
 
   this.incrementCounter = function(){
     self.currentCat().clickCount(self.currentCat().clickCount()+1);
+  };
+  this.setCat =function(clickedCat){
+      self.currentCat(clickedCat);
   };
 };
 

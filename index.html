@@ -9,13 +9,7 @@
 
 
   <ul data-bind="foreach: catList">
-    <li>
-     <span data-bind="text: $index"> </span>:
-     <span data-bind="text: name"> </span>
-     <span data-bind="text: level"></span>
-     <span id="cat-count" data-bind="text: clickCount"></span>
-     <img id="cat-img" src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}">
-   </li>
+    <li data-bind="text: name, click: $parent.setCat"></li>
  </ul>
 
  <div id="cat" data-bind="with: currentCat">
